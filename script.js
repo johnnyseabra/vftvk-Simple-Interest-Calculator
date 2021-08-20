@@ -1,8 +1,8 @@
 function compute()
 {
-    if(document.getElementById('principal').value == 0)
+    if(parseInt(document.getElementById('principal').value) <= 0)
 	{
-		alert('You need to fill the Amount');
+		alert('You need to fill an positive amount');
 		return false;
 	}
 	
