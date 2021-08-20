@@ -1,8 +1,9 @@
 function compute()
 {
-    if(parseInt(document.getElementById('principal').value) <= 0)
+    if((parseInt(document.getElementById('principal').value) <= 0) || document.getElementById('principal').value == "")
 	{
 		alert('You need to fill an positive amount');
+		document.getElementById('principal').focus();
 		return false;
 	}
 	
